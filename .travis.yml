@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t rakshans1/base .
+  - docker run rakshans1/base /bin/sh -c "exit 0"
